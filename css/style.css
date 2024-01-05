@@ -1,5 +1,5 @@
 body{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     background-color: #f9f3ed;
     /* background-color: violet; */
@@ -12,56 +12,52 @@ header {
     font-weight: bold;
     position: relative;
     width: 100vw;
-    overflow: hidden;
     background-color: #8A6846;
     color: black;
-    height: 30px;
+    min-height: 105px;
+    max-height: 500px;
     list-style: none;
-    margin: 0;
-    padding: 40px 0px; 
-    /* font-family: 'JetBrains Mono', monospace; */
+    margin-bottom: 60px;
 }
+.nav li {
+    float: left;
+    padding: 40px 30px;
+}
+.nav {
+    float: right;
+}
+ul.nav a { 
+    text-decoration: none; color: black; }
 
 main {
-    height: 100vh;
     background-color: #f9f3ed;
+    /* background-color: tomato; */
     margin: 40px auto;
     width: 82vw;
     position: relative;
-    padding-bottom: 8.5rem;   
 }
 #page-container {
+    /* background-color: yellowgreen; */
     position: relative;
-    min-height: 100vh;
-    text-decoration: none;
 }
   
 footer {
-    /* font-family: 'JetBrains Mono', monospace; */
-    position: absolute;
     bottom: 0;
     width: 100vw;
-    padding: 20px 10px;
-    height: 1.5rem;
+    height: 40px;
+    padding-top: 25px;
     text-align: right;
     background-color: #9a9bbb;
     color: black;
 }
-
-
-.nav li {
-    float: left;
-    padding: 0px 30px;
-
+footer a {
+    /* background-color: springgreen; */
+    text-decoration: none; color: black;
+    padding-right: 10px;
 }
-.nav {
-    float: right;
-    overflow: hidden;
-    text-decoration: none;
-}
+
 
 /* afbeelding tekst vak*/
-
 div.afbeelding-tekst {
     position: relative;
     margin: 0 auto;
@@ -79,7 +75,7 @@ h1 {
     background-color: #B8DCDA;
     color: #584c6f;
     padding: 60px;
-    margin: -90px 0 0 -210px ;
+    margin: -35px 0 0 -210px ;
 }
 
 #kaartjes {
@@ -91,16 +87,13 @@ h1 {
 /* boekenkast vak*/
 
 #boekenkast {
-    position: relative;
     float: right;
 }
 
 #tekst-boekenkast {
-    float: left;
-    margin-top: 0px;
     width: 450px;
-    height: fit-content;
-    /* background-color: #be7080; */
+    /* height: fit-content; */
+    /* background-color: teal; */
     padding:  3rem ;
 }
 
@@ -241,6 +234,6 @@ p {
 /* book.html*/
 
 .boek {
-    max-width: 80vw;
+    width: inherit;
     object-fit: cover;
     }
