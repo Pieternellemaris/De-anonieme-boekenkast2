@@ -36,6 +36,25 @@ main {
     width: 82vw;
     position: relative;
 }
+
+.grid-box {
+    width: 80vw;
+    margin: 0 100px ;
+display: grid;
+column-gap: 50px;
+}
+
+.colom1 {
+    grid-column-start: 1;
+}
+
+.colom2 {
+    grid-column-start: 2;
+}
+
+.colom3 {
+    grid-column-start: 3;
+}
 #page-container {
     /* background-color: yellowgreen; */
     position: relative;
